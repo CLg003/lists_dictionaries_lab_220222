@@ -78,9 +78,36 @@ avrils_even_lottery_nums = []
 for num in avrils_lottery_nums:
   if (num % 2 == 0):
     avrils_even_lottery_nums.append(num)
-print(avrils_even_lottery_nums)
+# print(avrils_even_lottery_nums)
 
 # 7. Erik is one lottery number short! Add the number `7` to be included in his lottery numbers
+# print(eriks_lottery_nums)
+eriks_lottery_nums.insert(0, 7)
+# print(eriks_lottery_nums)
+
 # 8. Change Erik's hometown to Edinburgh
+users["Erik"]["home_town"] = "Edinburgh"
+# print(users["Erik"])
+
 # 9. Add a pet dog to Erik called "Fluffy"
+users["Erik"]["pets"].append({"name" : "Fluffy", "species" : "dog"})
+# print(users["Erik"])
+
 # 10. Add another person to the users dictionary
+users["Claire"] = {
+  "twitter" : "clairey",
+  "lottery_numbers" : [3, 7, 15, 23, 39, 45],
+  "home_town" : "Edinburgh",
+  "pets" : [
+    {
+      "name" : "Pixel",
+      "species" : "cat"
+    },
+    {
+      "name" : "Ethan",
+      "species" : "person"
+    }
+
+  ]
+}
+print(users["Claire"])
